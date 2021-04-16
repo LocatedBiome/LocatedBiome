@@ -1,5 +1,5 @@
 <html> 
-  <head>
-    'Hello world!'
-  </head>
+  <title>
+    Hello world!
+  </title>
 </html>  
