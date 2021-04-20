@@ -4,11 +4,6 @@
     LocatedBiome - a Virtually Interactive Community.
   </title>
   <body>
-   <head>
-      <link rel="icon" 
-     type="image/ico" 
-     href="http://github.com/favicon.ico">
-   </head>
   <h1>
     <center>
       Welcome! This page is still in progress...
@@ -26,49 +21,5 @@
     <center>
       <img src="loading.gif" alt="Loading Icon" style="width:128px;height:128px;">
     </center>
-       <button>test</button>
-    <script>
-      /* create new js file and add into htnl */
-var StyleChanger = function(id) {
-    id = id.toLowerCase().trim();
-    let findSS = function() {
-        for (let ss of document.styleSheets) 
-            for (let rule of ss.cssRules) 
-                if (rule.selectorText.toLowerCase().substr(1)===id) 
-                    return ss;        
-    }
-    let ss = findSS();
-    if (!ss) return undefined;
-    ss.change = function(originalValue, newValue) {
-        for (let rule of ss.cssRules) {
-            if (!rule.originalStyle) { // init original rules at first use                            
-                rule.originalStyle = {};
-                for (let style of rule.style) 
-                    rule.originalStyle[style] = rule.style[style];
-            }
-            for (let style in rule.originalStyle) { // replace rules from original list
-                if (rule.originalStyle[style]===originalValue) 
-                    rule.style[style] = newValue;
-            }
-        }        
-    }
-    ss.reset = function() {
-        for (let rule of ss.cssRules) {
-            if (!rule.originalStyle) continue;
-            for (let style in rule.originalStyle)  
-                rule.style[style] = rule.originalStyle[style];
-        }                            
-    }
-    return ss;
-}
-
-// find the stylesheet to change
-var ss = StyleChanger("my_custom_identifier");
-
-$( "button" ).click(function() {
-    ss.change("darkolivegreen", "blue");
-});
-
-    </script>
   </body>
 </html>  
