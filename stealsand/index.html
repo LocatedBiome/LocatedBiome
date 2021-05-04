@@ -1,0 +1,84 @@
+
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xml:lang="en-US"
+      lang="en-US">
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/png" 
+      href="/stealsand/sand.png" />
+	</head>
+<head> 
+<style>
+body {
+  background-image: url('sand.png');
+  background-repeat: repeat;
+  background-attachment: center;  
+  background-size: medium;
+}
+</style>
+</head>
+  <head>
+  <title>
+    Steal Someone's Sand
+  </title>
+  </head>
+
+  <style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<body>
+
+<h1>Steal Sand</h1>
+
+<div id="myProgress">
+  <div id="myBar">1%</div>
+</div>
+
+<br>
+        <form>
+          What is their name? (so sand steal)<br>
+          <input type="text" id="field1" name="field1" value="First name"><br>
+            <input type="text" id="field2" name="field2" value="Last name"><br>
+        </form>
+<button onclick="move()">Click Me To Commence Stealing Sand</button> 
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 900);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
