@@ -7,14 +7,19 @@
   overflow: hidden;
   background-size: cover;
   background-image: url("https://puu.sh/g2wwB/8c3331482b.png");
+  cursor: pointer;
 }
-
+.footer{
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
 input {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  color: black;
+  color: cyan;
   size: 50px;
 }
 
@@ -23,9 +28,11 @@ input {
 }
 #my_form1 {
   background-image: url("https://puu.sh/g2wwB/8c3331482b.png");
+  font-family: "mc";
 }
 #my_form2 {
   background-image: url("https://puu.sh/g2wwB/8c3331482b.png");
+  font-family: "mc";
 }
 @font-face {
   font-family: "mc";
@@ -51,14 +58,26 @@ input {
   height: 120px;
   width: 220px;
 }
+h1 {
+  font-family: "mc";
+  line-height: 22px;
+  font-size: 32px; /* 18 is better but looks blurred */
+  font-weight: 550;
+  margin: auto;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
 p {
   font-family: "mc";
   line-height: 22px;
   font-size: 16px; /* 18 is better but looks blurred */
   font-weight: 550;
-  margin: auto;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
+}
+h3 {
+  font-family: "mc";
+  line-height: 22px;
+  font-size: 18px; /* 18 is better but looks blurred */
+  font-weight: 550;
 }
 .color0 {
   color: #000000;
@@ -160,6 +179,7 @@ input[type="password"]:focus {
 /* Set a style for all buttons */
 button {
   background-color: #4caf50;
+  font-family: "mc";
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
