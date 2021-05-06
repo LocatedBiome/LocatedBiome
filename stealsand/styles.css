@@ -1,3 +1,15 @@
+.test
+{
+  border: none;
+  margin: auto;
+  position: relative;
+  left: -425px;
+  overflow: hidden;
+  background-size: cover;
+  width: 500px;
+  hight: 400px;
+  background-image: url("https://puu.sh/g2wwB/8c3331482b.png");
+}
 input {
   border-top-style: hidden;
   border-right-style: hidden;
@@ -11,11 +23,11 @@ input {
 }
 #my_form1
 {
-background-color: transparent;
+background-image: url("https://puu.sh/g2wwB/8c3331482b.png");
 }
 #my_form2
 {
-background-color: transparent;
+background-image: url("https://puu.sh/g2wwB/8c3331482b.png");background-link="";
 }
 @font-face {
     font-family:'mc';
