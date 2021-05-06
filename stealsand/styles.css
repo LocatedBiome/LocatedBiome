@@ -44,7 +44,7 @@ html, body {
 p {
     font-family:"mc";
     line-height: 22px;
-    font-size: 18px; /* 18 is better but looks blurred */
+    font-size: 16px; /* 18 is better but looks blurred */
     font-weight: 550;
     margin: auto;
     text-align: center;
@@ -175,7 +175,7 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display: repeat; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
