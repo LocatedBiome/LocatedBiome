@@ -1,79 +1,86 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-
-<head profile="http://www.w3.org/2005/10/profile">
-  <link rel="icon" type="image/png" href="/LocatedBiome/activities/plane.png" />
+<head>
+  <title>calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
 </head>
-
-mixin cuboid()
-  .cuboid(class!=attributes.class)
-    - let s = 0
-    while s < 6
-      .cuboid__side
-      - s++
-.scene
-  .cloud.cloud--one
-    .cloud__shift
-      .cloud__body
-        div
-          +cuboid()(class="cuboid--cloud")
-        div
-          +cuboid()(class="cuboid--cloud")
-        div
-          +cuboid()(class="cuboid--cloud")
-  .cloud.cloud--two
-    .cloud__shift
-      .cloud__body
-        div
-          +cuboid()(class="cuboid--cloud")
-        div
-          +cuboid()(class="cuboid--cloud")
-        div
-          +cuboid()(class="cuboid--cloud")
-  .cloud.cloud--three
-    .cloud__shift
-      .cloud__body
-        div
-          +cuboid()(class="cuboid--cloud")
-        div
-          +cuboid()(class="cuboid--cloud")
-        div
-          +cuboid()(class="cuboid--cloud")
-  .plane__floater
-    .plane__looper
-      .plane
-        .plane__wheels
-          .plane__axle
-            +cuboid()(class="cuboid--axle")
-          .plane__wheel.plane__wheel--left
-            +cuboid()(class="cuboid--wheel-left")
-          .plane__wheel.plane__wheel--right
-            +cuboid()(class="cuboid--wheel-right")
-        .plane__body
-          +cuboid()(class="cuboid--body")
-        .plane__nose
-          +cuboid()(class="cuboid--nose")
-        .plane__propellor
-          .propellor
-        .plane__screen
-          +cuboid()(class="cuboid--screen")
-        .plane__wings.wings
-          .wings__top
-            +cuboid()(class="cuboid--wings-top")
-          .wings__ghost
-            +cuboid()(class="cuboid--wings-ghost")
-          .wings__bottom
-            +cuboid()(class="cuboid--wings-bottom")
-          .wings__strobe.wings__strobe--left
-            +cuboid()(class="cuboid--strobe")
-          .wings__strobe.wings__strobe--right
-            +cuboid()(class="cuboid--strobe")
-        .plane__tail
-          +cuboid()(class="cuboid--tail")
-        .plane__stabilizer.plane__stabilizer--horizontal
-          +cuboid()(class="cuboid--horizontal-stabilizer")
-        .plane__stabilizer.plane__stabilizer--vertical
-          +cuboid()(class="cuboid--vertical-stabilizer")
-        .plane__beacon
-          +cuboid()(class="cuboid--beacon")
+<body>
+  <div class = "container">
+    <div class = "well">
+    <div class = "row" id="show">
+      <div class = "col-xs-12">
+        <h1 id = "screen">0</h1>
+        <h4 id = "record"></h4>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-3">
+        <button class = "eraser" id="AC"><h3>AC</h3></button>
+      </div>
+      <div class="col-xs-3" class = "eraser">
+        <button class = "eraser" id="CE"><h3>CE</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="divide"><h3>÷</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="multiply"><h3>x</h3></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-3">
+        <button id="seven"><h3>7</h3>
+      </div>
+      <div class="col-xs-3">
+        <button id="eight"><h3>8</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="nine"><h3>9</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="rest"><h3>-</h3></button>
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-xs-3">
+        <button id="four"><h3>4</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="five"><h3>5</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="six"><h3>6</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="sum"><h3>+</h3></button>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="col-xs-3">
+        <button id="one"><h3>1</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="two"><h3>2</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="three"><h3>3</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="equal"><h3>=</h3></button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-6">
+        <button id="zero"><h3>0</h3></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="point"><h3>.</h3></button>
+      </div>
+    </div>
+    
+      </div>
+  </div>
+</body>
