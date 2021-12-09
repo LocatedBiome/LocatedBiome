@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head profile="http://www.w3.org/2005/10/profile">
+  <link rel="icon" type="image/jpg" href="/LocatedBiome/activities/placeholder.jpg" />
+</head>
+
+<head>
+  <style>
+    body {
+      background-image: url('sand.png');
+      background-repeat: repeat;
+      background-attachment: center;
+      background-size: medium;
+    }
+  </style>
+</head>
+
+<head>
+  <title>
+    Steal Someone's Sand
+  </title>
+</head>
+
+<style>
+  #myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+</style>
+
+<body>
+  <p>
+  <head>
+    <script type="text/javascript" src="scripts.js">
+
+    </script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <h1>Steal Sand</h1>
+  </p>
+  <div id="myProgress">
+    <div id="myBar">1%</div>
+  </div>
+
+  <div class="test">
+    <br>
+    <form id="my_form" class="color1" style="border-color: blue;">
+      <h3>
+        <center>
+          What is their name? (so steal sand)</center>
+      </h3><br>
+      <input type="text" class="no-outline" id="my_form1" name="field1" placeholder="First name"><br>
+      <input type="text" class="no-outline" id="my_form2" name="field2" placeholder="Last name"><br>
+    </form>
+  </div>
+  <button id="commence" onclick="cant()">Click Me To Commence Stealing Sand</button>
+
+  <script>
+    //  var no = "Kupfer";
+  //    var commence = document.getElementById("commence");
+//
+  //    function cant() {
+//
+        //  if (!no == true) {
+             // if (id = commence) {
+           //       onclick = "move()"
+         //     }
+       //   }
+     // }
+    var i = 0;
+
+    function move() {
+      if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 900);
+
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+          }
+        }
+      }
+    }
+  </script>
+  <button href="mailto:locatedbiome@gmail.com, kupfer.isaac@d46.org">Submit Feedback</button>
+</body>
+<div class="footer">
+
+  <body>
+    <head>
+      <p id="demo"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+    </head>
+  </body>
+</div>
+
+</html>
